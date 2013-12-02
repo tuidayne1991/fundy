@@ -1,0 +1,536 @@
+2013/12/01 08:52:07 [error] [php] mkdir(): Permission denied (/vagrant/yii/framework/utils/CFileHelper.php:307)
+Stack trace:
+#0 /vagrant/yii/framework/utils/CFileHelper.php(157): copyDirectoryRecursive()
+#1 /vagrant/yii/framework/utils/CFileHelper.php(63): copyDirectoryRecursive()
+#2 /vagrant/yii/framework/web/CAssetManager.php(251): copyDirectory()
+#3 /vagrant/yii/framework/web/CClientScript.php(510): CAssetManager->publish()
+#4 /vagrant/yii/framework/web/CClientScript.php(547): CClientScript->getCoreScriptUrl()
+#5 /vagrant/yii/framework/web/CClientScript.php(348): CClientScript->getPackageBaseUrl()
+#6 /vagrant/yii/framework/web/CClientScript.php(208): CClientScript->renderCoreScripts()
+#7 /vagrant/yii/framework/web/CController.php(351): CClientScript->render()
+#8 /vagrant/yii/framework/web/CController.php(788): SiteController->processOutput()
+#9 /vagrant/server/fundy/protected/controllers/SiteController.php(72): SiteController->render()
+#10 /vagrant/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionContact()
+#11 /vagrant/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /vagrant/yii/framework/web/CController.php(286): SiteController->runAction()
+#13 /vagrant/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#14 /vagrant/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#15 /vagrant/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /vagrant/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /vagrant/server/fundy/index.php(13): CWebApplication->run()
+REQUEST_URI=/fundy/index.php?r=site/contact
+in /vagrant/server/fundy/protected/controllers/SiteController.php (72)
+in /vagrant/server/fundy/index.php (13)
+2013/12/01 09:08:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /vagrant/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#1 /vagrant/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /vagrant/server/fundy/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/fundy/index.php?r=gii
+---
+2013/12/01 13:13:09 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /vagrant/yii/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /vagrant/yii/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /vagrant/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /vagrant/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /vagrant/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /vagrant/server/fundy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/fundy/index.php?r=gii
+---
+2013/12/01 13:13:29 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /vagrant/yii/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /vagrant/yii/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /vagrant/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /vagrant/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /vagrant/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /vagrant/server/fundy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/fundy/index.php?r=gii
+---
+2013/12/01 13:13:35 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /vagrant/yii/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /vagrant/yii/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /vagrant/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /vagrant/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /vagrant/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /vagrant/server/fundy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/fundy/index.php?r=gii
+---
+2013/12/01 13:13:38 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /vagrant/yii/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /vagrant/yii/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /vagrant/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /vagrant/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /vagrant/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /vagrant/server/fundy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/fundy/index.php?r=gii
+---
+2013/12/01 13:14:40 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /vagrant/yii/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /vagrant/yii/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /vagrant/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /vagrant/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /vagrant/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /vagrant/server/fundy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/fundy/index.php?r=gii
+---
+2013/12/01 13:15:31 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /vagrant/yii/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /vagrant/yii/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /vagrant/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /vagrant/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /vagrant/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /vagrant/server/fundy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/fundy/index.php?r=gii
+---
+2013/12/01 13:15:34 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /vagrant/yii/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /vagrant/yii/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /vagrant/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /vagrant/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /vagrant/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /vagrant/server/fundy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/fundy/index.php?r=gii
+---
+2013/12/01 13:15:34 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /vagrant/yii/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /vagrant/yii/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /vagrant/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /vagrant/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /vagrant/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /vagrant/server/fundy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/fundy/index.php?r=gii
+---
+2013/12/01 13:15:35 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /vagrant/yii/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /vagrant/yii/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /vagrant/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /vagrant/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /vagrant/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /vagrant/server/fundy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/fundy/index.php?r=gii
+---
+2013/12/01 13:15:35 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /vagrant/yii/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /vagrant/yii/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /vagrant/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /vagrant/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /vagrant/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /vagrant/server/fundy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/fundy/index.php?r=gii
+---
+2013/12/01 13:15:35 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /vagrant/yii/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /vagrant/yii/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /vagrant/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /vagrant/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /vagrant/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /vagrant/server/fundy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/fundy/index.php?r=gii
+---
+2013/12/01 13:15:36 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /vagrant/yii/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /vagrant/yii/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /vagrant/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /vagrant/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /vagrant/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /vagrant/server/fundy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/fundy/index.php?r=gii
+---
+2013/12/01 13:18:08 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /vagrant/yii/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /vagrant/yii/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /vagrant/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /vagrant/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /vagrant/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /vagrant/server/fundy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/fundy/index.php?r=gii
+---
+2013/12/01 13:18:31 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /vagrant/yii/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /vagrant/yii/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /vagrant/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /vagrant/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /vagrant/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /vagrant/server/fundy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/fundy/index.php?r=gii
+---
+2013/12/01 13:18:32 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /vagrant/yii/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /vagrant/yii/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /vagrant/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /vagrant/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /vagrant/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /vagrant/server/fundy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/fundy/index.php?r=gii
+---
+2013/12/01 13:18:47 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /vagrant/yii/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /vagrant/yii/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /vagrant/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /vagrant/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /vagrant/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /vagrant/server/fundy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/fundy/index.php?r=gii
+---
+2013/12/01 13:20:08 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /vagrant/yii/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /vagrant/yii/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /vagrant/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /vagrant/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /vagrant/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /vagrant/server/fundy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/fundy/index.php?r=gii
+---
+2013/12/01 13:20:10 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /vagrant/yii/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /vagrant/yii/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /vagrant/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /vagrant/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /vagrant/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /vagrant/server/fundy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/fundy/index.php?r=gii
+---
+2013/12/01 13:21:07 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /vagrant/yii/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /vagrant/yii/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /vagrant/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /vagrant/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /vagrant/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /vagrant/server/fundy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/fundy/index.php?r=gii
+---
+2013/12/01 13:24:20 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /vagrant/yii/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /vagrant/yii/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /vagrant/yii/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /vagrant/yii/framework/base/CModule.php(387): CDbConnection->init()
+#3 /vagrant/yii/framework/base/CModule.php(103): CModule->getComponent('db')
+#4 /vagrant/yii/framework/gii/generators/model/ModelCode.php(60): CModule->__get('db')
+#5 /vagrant/yii/framework/web/CFormModel.php(39): ModelCode->init()
+#6 /vagrant/yii/framework/gii/CCodeGenerator.php(153): CFormModel->__construct()
+#7 /vagrant/yii/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 /vagrant/yii/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 /vagrant/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /vagrant/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /vagrant/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /vagrant/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#13 /vagrant/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/model/index')
+#14 /vagrant/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /vagrant/server/fundy/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/fundy/index.php?r=gii/model/index
+HTTP_REFERER=http://localhost:9090/fundy/index.php?r=gii
+---
+2013/12/01 13:26:12 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /vagrant/yii/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /vagrant/yii/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /vagrant/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#2 /vagrant/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/default/log...')
+#3 /vagrant/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /vagrant/server/fundy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/fundy/index.php?r=gii/default/login
+---
+2013/12/01 13:26:14 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /vagrant/yii/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /vagrant/yii/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /vagrant/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#2 /vagrant/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/default/log...')
+#3 /vagrant/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /vagrant/server/fundy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/fundy/index.php?r=gii/default/login
+---
+2013/12/01 13:46:38 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /vagrant/yii/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /vagrant/yii/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /vagrant/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#2 /vagrant/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/default/log...')
+#3 /vagrant/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /vagrant/server/fundy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/fundy/index.php?r=gii/default/login
+---
+2013/12/01 13:46:41 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /vagrant/yii/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /vagrant/yii/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /vagrant/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#2 /vagrant/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/default/log...')
+#3 /vagrant/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /vagrant/server/fundy/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/fundy/index.php?r=gii/default/login
+---
+2013/12/01 13:46:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii/login".' in /vagrant/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/login')
+#1 /vagrant/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /vagrant/server/fundy/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/fundy/index.php?r=gii/login
+---
+2013/12/01 13:47:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii/login".' in /vagrant/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/login')
+#1 /vagrant/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /vagrant/server/fundy/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/fundy/index.php?r=gii/login
+---
+2013/12/01 14:41:15 [error] [php] file_put_contents(/vagrant/server/fundy/protected/runtime/gii-1.1.14/ModelCode.php): failed to open stream: Permission denied (/vagrant/yii/framework/gii/CCodeModel.php:388)
+Stack trace:
+#0 /vagrant/yii/framework/gii/CCodeGenerator.php(63): ModelGenerator->prepare()
+#1 /vagrant/yii/framework/web/actions/CInlineAction.php(49): ModelGenerator->actionIndex()
+#2 /vagrant/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /vagrant/yii/framework/web/CController.php(286): ModelGenerator->runAction()
+#4 /vagrant/yii/framework/web/CController.php(265): ModelGenerator->runActionWithFilters()
+#5 /vagrant/yii/framework/web/CWebApplication.php(282): ModelGenerator->run()
+#6 /vagrant/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /vagrant/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /vagrant/server/fundy/index.php(13): CWebApplication->run()
+REQUEST_URI=/fundy/index.php/gii/model/index
+in /vagrant/server/fundy/index.php (13)
+2013/12/01 14:42:18 [error] [php] file_put_contents(/vagrant/server/fundy/protected/runtime/gii-1.1.14/ModelCode.php): failed to open stream: Permission denied (/vagrant/yii/framework/gii/CCodeModel.php:388)
+Stack trace:
+#0 /vagrant/yii/framework/gii/CCodeGenerator.php(63): ModelGenerator->prepare()
+#1 /vagrant/yii/framework/web/actions/CInlineAction.php(49): ModelGenerator->actionIndex()
+#2 /vagrant/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /vagrant/yii/framework/web/CController.php(286): ModelGenerator->runAction()
+#4 /vagrant/yii/framework/web/CController.php(265): ModelGenerator->runActionWithFilters()
+#5 /vagrant/yii/framework/web/CWebApplication.php(282): ModelGenerator->run()
+#6 /vagrant/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /vagrant/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /vagrant/server/fundy/index.php(13): CWebApplication->run()
+REQUEST_URI=/fundy/index.php/gii/model/index
+in /vagrant/server/fundy/index.php (13)
+2013/12/01 14:43:27 [error] [php] file_put_contents(/vagrant/server/fundy/protected/runtime/gii-1.1.14/ModelCode.php): failed to open stream: Permission denied (/vagrant/yii/framework/gii/CCodeModel.php:388)
+Stack trace:
+#0 /vagrant/yii/framework/gii/CCodeGenerator.php(63): ModelGenerator->prepare()
+#1 /vagrant/yii/framework/web/actions/CInlineAction.php(49): ModelGenerator->actionIndex()
+#2 /vagrant/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /vagrant/yii/framework/web/CController.php(286): ModelGenerator->runAction()
+#4 /vagrant/yii/framework/web/CController.php(265): ModelGenerator->runActionWithFilters()
+#5 /vagrant/yii/framework/web/CWebApplication.php(282): ModelGenerator->run()
+#6 /vagrant/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /vagrant/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /vagrant/server/fundy/index.php(13): CWebApplication->run()
+REQUEST_URI=/fundy/index.php/gii/model/index
+in /vagrant/server/fundy/index.php (13)
+2013/12/01 14:44:09 [error] [php] file_put_contents(/vagrant/server/fundy/protected/runtime/gii-1.1.14/ModelCode.php): failed to open stream: Permission denied (/vagrant/yii/framework/gii/CCodeModel.php:388)
+Stack trace:
+#0 /vagrant/yii/framework/gii/CCodeGenerator.php(63): ModelGenerator->prepare()
+#1 /vagrant/yii/framework/web/actions/CInlineAction.php(49): ModelGenerator->actionIndex()
+#2 /vagrant/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /vagrant/yii/framework/web/CController.php(286): ModelGenerator->runAction()
+#4 /vagrant/yii/framework/web/CController.php(265): ModelGenerator->runActionWithFilters()
+#5 /vagrant/yii/framework/web/CWebApplication.php(282): ModelGenerator->run()
+#6 /vagrant/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /vagrant/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /vagrant/server/fundy/index.php(13): CWebApplication->run()
+REQUEST_URI=/fundy/index.php/gii/model/index
+in /vagrant/server/fundy/index.php (13)
+2013/12/01 14:45:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to find the code you requested.' in /vagrant/yii/framework/gii/CCodeGenerator.php:90
+Stack trace:
+#0 /vagrant/yii/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionCode()
+#1 /vagrant/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /vagrant/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /vagrant/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /vagrant/yii/framework/web/CWebApplication.php(282): CController->run('code')
+#5 /vagrant/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/model/code/...')
+#6 /vagrant/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /vagrant/server/fundy/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/fundy/index.php/gii/model/code/id/0
+HTTP_REFERER=http://127.0.0.1:9090/fundy/index.php/gii/model/index
+---
+2013/12/01 14:52:54 [error] [php] mkdir(): Permission denied (/vagrant/server/fundy/framework/utils/CFileHelper.php:307)
+Stack trace:
+#0 /vagrant/server/fundy/framework/utils/CFileHelper.php(157): copyDirectoryRecursive()
+#1 /vagrant/server/fundy/framework/utils/CFileHelper.php(63): copyDirectoryRecursive()
+#2 /vagrant/server/fundy/framework/web/CAssetManager.php(251): copyDirectory()
+#3 /vagrant/server/fundy/framework/web/CClientScript.php(510): CAssetManager->publish()
+#4 /vagrant/server/fundy/framework/zii/widgets/jui/CJuiWidget.php(98): CClientScript->getCoreScriptUrl()
+#5 /vagrant/server/fundy/framework/zii/widgets/jui/CJuiWidget.php(81): CJuiAutoComplete->resolvePackagePath()
+#6 /vagrant/server/fundy/framework/web/CBaseController.php(147): CJuiAutoComplete->init()
+#7 /vagrant/server/fundy/framework/web/CBaseController.php(172): ModelGenerator->createWidget()
+#8 /vagrant/server/fundy/framework/gii/generators/model/views/index.php(92): ModelGenerator->widget()
+#9 /vagrant/server/fundy/framework/web/CBaseController.php(126): require()
+#10 /vagrant/server/fundy/framework/web/CBaseController.php(95): ModelGenerator->renderInternal()
+#11 /vagrant/server/fundy/framework/web/CController.php(869): ModelGenerator->renderFile()
+#12 /vagrant/server/fundy/framework/web/CController.php(782): ModelGenerator->renderPartial()
+#13 /vagrant/server/fundy/framework/gii/CCodeGenerator.php(72): ModelGenerator->render()
+#14 /vagrant/server/fundy/framework/web/actions/CInlineAction.php(49): ModelGenerator->actionIndex()
+#15 /vagrant/server/fundy/framework/web/CController.php(308): CInlineAction->runWithParams()
+#16 /vagrant/server/fundy/framework/web/CController.php(286): ModelGenerator->runAction()
+#17 /vagrant/server/fundy/framework/web/CController.php(265): ModelGenerator->runActionWithFilters()
+#18 /vagrant/server/fundy/framework/web/CWebApplication.php(282): ModelGenerator->run()
+#19 /vagrant/server/fundy/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#20 /vagrant/server/fundy/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /vagrant/server/fundy/index.php(13): CWebApplication->run()
+REQUEST_URI=/fundy/index.php/gii/model/index
+in /vagrant/server/fundy/index.php (13)
+2013/12/01 14:53:45 [error] [php] mkdir(): Permission denied (/vagrant/server/fundy/framework/utils/CFileHelper.php:307)
+Stack trace:
+#0 /vagrant/server/fundy/framework/utils/CFileHelper.php(157): copyDirectoryRecursive()
+#1 /vagrant/server/fundy/framework/utils/CFileHelper.php(63): copyDirectoryRecursive()
+#2 /vagrant/server/fundy/framework/web/CAssetManager.php(251): copyDirectory()
+#3 /vagrant/server/fundy/framework/gii/GiiModule.php(143): CAssetManager->publish()
+#4 /vagrant/server/fundy/framework/base/CComponent.php(111): GiiModule->getAssetsUrl()
+#5 /vagrant/server/fundy/framework/base/CModule.php(105): GiiModule->__get()
+#6 /vagrant/server/fundy/framework/gii/views/layouts/main.php(5): GiiModule->__get()
+#7 /vagrant/server/fundy/framework/web/CBaseController.php(126): require()
+#8 /vagrant/server/fundy/framework/web/CBaseController.php(95): ModelGenerator->renderInternal()
+#9 /vagrant/server/fundy/framework/web/widgets/CContentDecorator.php(76): ModelGenerator->renderFile()
+#10 /vagrant/server/fundy/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#11 /vagrant/server/fundy/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#12 /vagrant/server/fundy/framework/web/CBaseController.php(206): CContentDecorator->run()
+#13 /vagrant/server/fundy/framework/web/CBaseController.php(300): ModelGenerator->endWidget()
+#14 /vagrant/server/fundy/framework/gii/views/layouts/generator.php(25): ModelGenerator->endContent()
+#15 /vagrant/server/fundy/framework/web/CBaseController.php(126): require()
+#16 /vagrant/server/fundy/framework/web/CBaseController.php(95): ModelGenerator->renderInternal()
+#17 /vagrant/server/fundy/framework/web/CController.php(784): ModelGenerator->renderFile()
+#18 /vagrant/server/fundy/framework/gii/CCodeGenerator.php(72): ModelGenerator->render()
+#19 /vagrant/server/fundy/framework/web/actions/CInlineAction.php(49): ModelGenerator->actionIndex()
+#20 /vagrant/server/fundy/framework/web/CController.php(308): CInlineAction->runWithParams()
+#21 /vagrant/server/fundy/framework/web/CController.php(286): ModelGenerator->runAction()
+#22 /vagrant/server/fundy/framework/web/CController.php(265): ModelGenerator->runActionWithFilters()
+#23 /vagrant/server/fundy/framework/web/CWebApplication.php(282): ModelGenerator->run()
+#24 /vagrant/server/fundy/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#25 /vagrant/server/fundy/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#26 /vagrant/server/fundy/index.php(13): CWebApplication->run()
+REQUEST_URI=/fundy/index.php/gii/model/index
+in /vagrant/server/fundy/index.php (13)
+2013/12/01 15:05:56 [error] [exception.CException] exception 'CException' with message 'User and its behaviors do not have a method or closure named "validatePassword".' in /vagrant/server/fundy/framework/base/CComponent.php:266
+Stack trace:
+#0 /vagrant/server/fundy/framework/db/ar/CActiveRecord.php(227): CComponent->__call('validatePasswor...', Array)
+#1 /vagrant/server/fundy/protected/components/UserIdentity.php(25): CActiveRecord->__call('validatePasswor...', Array)
+#2 /vagrant/server/fundy/protected/components/UserIdentity.php(25): User->validatePassword('abc123')
+#3 /vagrant/server/fundy/protected/models/LoginForm.php(52): UserIdentity->authenticate()
+#4 /vagrant/server/fundy/framework/validators/CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#5 /vagrant/server/fundy/framework/validators/CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#6 /vagrant/server/fundy/framework/base/CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#7 /vagrant/server/fundy/protected/controllers/SiteController.php(94): CModel->validate()
+#8 /vagrant/server/fundy/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#9 /vagrant/server/fundy/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /vagrant/server/fundy/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /vagrant/server/fundy/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /vagrant/server/fundy/framework/web/CWebApplication.php(282): CController->run('login')
+#13 /vagrant/server/fundy/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#14 /vagrant/server/fundy/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /vagrant/server/fundy/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/fundy/index.php/site/login
+HTTP_REFERER=http://localhost:9090/fundy/index.php/site/login
+---
+2013/12/01 15:44:11 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.username" is not defined.' in /vagrant/server/fundy/framework/base/CComponent.php:130
+Stack trace:
+#0 /vagrant/server/fundy/framework/web/helpers/CHtml.php(2529): CComponent->__get('username')
+#1 /vagrant/server/fundy/framework/web/helpers/CHtml.php(2252): CHtml::resolveValue(Object(LoginForm), 'username')
+#2 /vagrant/server/fundy/framework/web/helpers/CHtml.php(1434): CHtml::activeInputField('text', Object(LoginForm), 'username', Array)
+#3 /vagrant/server/fundy/framework/web/widgets/CActiveForm.php(725): CHtml::activeTextField(Object(LoginForm), 'username', Array)
+#4 /vagrant/server/fundy/protected/views/site/login.php(29): CActiveForm->textField(Object(LoginForm), 'username')
+#5 /vagrant/server/fundy/framework/web/CBaseController.php(126): require('/vagrant/server...')
+#6 /vagrant/server/fundy/framework/web/CBaseController.php(95): CBaseController->renderInternal('/vagrant/server...', Array, true)
+#7 /vagrant/server/fundy/framework/web/CController.php(869): CBaseController->renderFile('/vagrant/server...', Array, true)
+#8 /vagrant/server/fundy/framework/web/CController.php(782): CController->renderPartial('login', Array, true)
+#9 /vagrant/server/fundy/protected/controllers/SiteController.php(98): CController->render('login', Array)
+#10 /vagrant/server/fundy/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#11 /vagrant/server/fundy/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /vagrant/server/fundy/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#13 /vagrant/server/fundy/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /vagrant/server/fundy/framework/web/CWebApplication.php(282): CController->run('login')
+#15 /vagrant/server/fundy/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 /vagrant/server/fundy/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /vagrant/server/fundy/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/fundy/index.php/site/login
+---
+2013/12/01 15:46:33 [error] [exception.CException] exception 'CException' with message 'LoginForm and its behaviors do not have a method or closure named "login".' in /vagrant/server/fundy/framework/base/CComponent.php:266
+Stack trace:
+#0 /vagrant/server/fundy/protected/controllers/SiteController.php(94): CComponent->__call('login', Array)
+#1 /vagrant/server/fundy/protected/controllers/SiteController.php(94): LoginForm->login()
+#2 /vagrant/server/fundy/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#3 /vagrant/server/fundy/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /vagrant/server/fundy/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /vagrant/server/fundy/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /vagrant/server/fundy/framework/web/CWebApplication.php(282): CController->run('login')
+#7 /vagrant/server/fundy/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#8 /vagrant/server/fundy/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /vagrant/server/fundy/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/fundy/index.php/site/login
+HTTP_REFERER=http://localhost:9090/fundy/index.php/site/login
+---
+2013/12/01 15:47:19 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.username" is not defined.' in /vagrant/server/fundy/framework/base/CComponent.php:130
+Stack trace:
+#0 /vagrant/server/fundy/protected/models/LoginForm.php(103): CComponent->__get('username')
+#1 /vagrant/server/fundy/protected/controllers/SiteController.php(94): LoginForm->login()
+#2 /vagrant/server/fundy/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#3 /vagrant/server/fundy/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /vagrant/server/fundy/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /vagrant/server/fundy/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /vagrant/server/fundy/framework/web/CWebApplication.php(282): CController->run('login')
+#7 /vagrant/server/fundy/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#8 /vagrant/server/fundy/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /vagrant/server/fundy/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/fundy/index.php/site/login
+HTTP_REFERER=http://localhost:9090/fundy/index.php/site/login
+---
+2013/12/01 16:29:35 [error] [php] file_put_contents(/vagrant/server/fundy/protected/runtime/gii-1.1.14/CrudCode.php): failed to open stream: Permission denied (/vagrant/server/fundy/framework/gii/CCodeModel.php:388)
+Stack trace:
+#0 /vagrant/server/fundy/framework/gii/CCodeGenerator.php(63): CrudGenerator->prepare()
+#1 /vagrant/server/fundy/framework/web/actions/CInlineAction.php(49): CrudGenerator->actionIndex()
+#2 /vagrant/server/fundy/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /vagrant/server/fundy/framework/web/CController.php(286): CrudGenerator->runAction()
+#4 /vagrant/server/fundy/framework/web/CController.php(265): CrudGenerator->runActionWithFilters()
+#5 /vagrant/server/fundy/framework/web/CWebApplication.php(282): CrudGenerator->run()
+#6 /vagrant/server/fundy/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /vagrant/server/fundy/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /vagrant/server/fundy/index.php(13): CWebApplication->run()
+REQUEST_URI=/fundy/index.php/gii/crud/index
+in /vagrant/server/fundy/index.php (13)
+2013/12/02 05:08:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "moneybox/index".' in /vagrant/server/fundy/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/server/fundy/framework/web/CWebApplication.php(141): CWebApplication->runController('moneybox/index')
+#1 /vagrant/server/fundy/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /vagrant/server/fundy/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/fundy/index.php/moneybox/index
+---
+2013/12/02 05:08:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "moneybox".' in /vagrant/server/fundy/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/server/fundy/framework/web/CWebApplication.php(141): CWebApplication->runController('moneybox')
+#1 /vagrant/server/fundy/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /vagrant/server/fundy/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/fundy/index.php/moneybox/
+---
+2013/12/02 05:10:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "moneybox".' in /vagrant/server/fundy/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/server/fundy/framework/web/CWebApplication.php(141): CWebApplication->runController('moneybox')
+#1 /vagrant/server/fundy/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /vagrant/server/fundy/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/fundy/index.php/moneybox/
+---

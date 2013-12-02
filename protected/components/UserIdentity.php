@@ -7,6 +7,8 @@
  */
 class UserIdentity extends CUserIdentity
 {
+	private $_id;
+	const ERROR_USER_UNACTIVATED = 101;
 	/**
 	 * Authenticates a user.
 	 * The example implementation makes sure if the username and password
@@ -16,8 +18,9 @@ class UserIdentity extends CUserIdentity
 	 * @return boolean whether authentication succeeds.
 	 */
 	public function authenticate()
-	{
-		$users=array(
+	{	
+		/*
+				$users=array(
 			// username => password
 			'demo'=>'demo',
 			'admin'=>'admin',
@@ -29,5 +32,21 @@ class UserIdentity extends CUserIdentity
 		else
 			$this->errorCode=self::ERROR_NONE;
 		return !$this->errorCode;
+		*/
+		Yii::log("Index Checkout", "profile", 'Hello World');
+		$user = User::model()->find('email=:uid' ,array(':uid'=>$this->username));
+		// user not found
+		if($user===null)$this->errorCode=self::ERROR_USERNAME_INVALID; 
+		// wrong password
+		else if(md5($this->password) !== $user->password)$this->errorCode=self::ERROR_PASSWORD_INVALID; 
+		// unactivated
+		else if (!$user->is_activated) $this->errorCode = self::ERROR_USER_UNACTIVATED;
+		else{
+			$this->_id=$user->id;
+			$this->username = $user->email; 
+			$this->errorCode=self::ERROR_NONE;
+		}
+		return !$this->errorCode;
+		//return $this->errorCode==self::ERROR NONE;
 	}
 }
