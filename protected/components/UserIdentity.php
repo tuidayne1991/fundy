@@ -33,7 +33,6 @@ class UserIdentity extends CUserIdentity
 			$this->errorCode=self::ERROR_NONE;
 		return !$this->errorCode;
 		*/
-		Yii::log("Index Checkout", "profile", 'Hello World');
 		$user = User::model()->find('email=:uid' ,array(':uid'=>$this->username));
 		// user not found
 		if($user===null)$this->errorCode=self::ERROR_USERNAME_INVALID; 
@@ -43,10 +42,16 @@ class UserIdentity extends CUserIdentity
 		else if (!$user->is_activated) $this->errorCode = self::ERROR_USER_UNACTIVATED;
 		else{
 			$this->_id=$user->id;
+			$this->setState("_id", $user->id);
 			$this->username = $user->email; 
 			$this->errorCode=self::ERROR_NONE;
 		}
 		return !$this->errorCode;
 		//return $this->errorCode==self::ERROR NONE;
 	}
+
+	public function getId()
+    {
+        return $this->_id;
+    }
 }

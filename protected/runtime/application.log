@@ -534,3 +534,327 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/fundy/index.php/moneybox/
 ---
+2013/12/02 11:35:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "box/index".' in /vagrant/server/fundy/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/server/fundy/framework/web/CWebApplication.php(141): CWebApplication->runController('box/index')
+#1 /vagrant/server/fundy/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /vagrant/server/fundy/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/fundy/index.php/box/index
+---
+2013/12/02 11:35:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "moneybox/index".' in /vagrant/server/fundy/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/server/fundy/framework/web/CWebApplication.php(141): CWebApplication->runController('moneybox/index')
+#1 /vagrant/server/fundy/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /vagrant/server/fundy/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/fundy/index.php/moneybox/index
+---
+2013/12/02 11:35:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "moneybox/index".' in /vagrant/server/fundy/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/server/fundy/framework/web/CWebApplication.php(141): CWebApplication->runController('moneybox/index')
+#1 /vagrant/server/fundy/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /vagrant/server/fundy/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/fundy/index.php/moneybox/index
+---
+2013/12/02 11:35:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "moneybox/index".' in /vagrant/server/fundy/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/server/fundy/framework/web/CWebApplication.php(141): CWebApplication->runController('moneybox/index')
+#1 /vagrant/server/fundy/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /vagrant/server/fundy/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/fundy/index.php/moneybox/index
+---
+2013/12/02 11:37:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "moneybox/index".' in /vagrant/server/fundy/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/server/fundy/framework/web/CWebApplication.php(141): CWebApplication->runController('moneybox/index')
+#1 /vagrant/server/fundy/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /vagrant/server/fundy/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/fundy/index.php/moneybox/index
+---
+2013/12/02 11:38:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "moneybox/index".' in /vagrant/server/fundy/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/server/fundy/framework/web/CWebApplication.php(141): CWebApplication->runController('moneybox/index')
+#1 /vagrant/server/fundy/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /vagrant/server/fundy/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/fundy/index.php/moneybox/index
+---
+2013/12/02 11:38:45 [error] [php] mkdir(): Permission denied (/vagrant/server/fundy/framework/utils/CFileHelper.php:307)
+Stack trace:
+#0 /vagrant/server/fundy/framework/utils/CFileHelper.php(157): copyDirectoryRecursive()
+#1 /vagrant/server/fundy/framework/utils/CFileHelper.php(63): copyDirectoryRecursive()
+#2 /vagrant/server/fundy/framework/web/CAssetManager.php(251): copyDirectory()
+#3 /vagrant/server/fundy/framework/zii/widgets/CListView.php(217): CAssetManager->publish()
+#4 /vagrant/server/fundy/framework/web/CBaseController.php(147): CListView->init()
+#5 /vagrant/server/fundy/framework/web/CBaseController.php(172): TransactionController->createWidget()
+#6 /vagrant/server/fundy/protected/views/transaction/index.php(20): TransactionController->widget()
+#7 /vagrant/server/fundy/framework/web/CBaseController.php(126): require()
+#8 /vagrant/server/fundy/framework/web/CBaseController.php(95): TransactionController->renderInternal()
+#9 /vagrant/server/fundy/framework/web/CController.php(869): TransactionController->renderFile()
+#10 /vagrant/server/fundy/framework/web/CController.php(782): TransactionController->renderPartial()
+#11 /vagrant/server/fundy/protected/controllers/TransactionController.php(128): TransactionController->render()
+#12 /vagrant/server/fundy/framework/web/actions/CInlineAction.php(49): TransactionController->actionIndex()
+#13 /vagrant/server/fundy/framework/web/CController.php(308): CInlineAction->runWithParams()
+#14 /vagrant/server/fundy/framework/web/filters/CFilterChain.php(133): TransactionController->runAction()
+#15 /vagrant/server/fundy/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#16 /vagrant/server/fundy/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#17 /vagrant/server/fundy/framework/web/filters/CInlineFilter.php(58): TransactionController->filterAccessControl()
+#18 /vagrant/server/fundy/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#19 /vagrant/server/fundy/framework/web/CController.php(291): CFilterChain->run()
+#20 /vagrant/server/fundy/framework/web/CController.php(265): TransactionController->runActionWithFilters()
+#21 /vagrant/server/fundy/framework/web/CWebApplication.php(282): TransactionController->run()
+#22 /vagrant/server/fundy/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#23 /vagrant/server/fundy/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#24 /vagrant/server/fundy/index.php(13): CWebApplication->run()
+REQUEST_URI=/fundy/index.php/transaction/index
+in /vagrant/server/fundy/protected/views/transaction/index.php (20)
+in /vagrant/server/fundy/protected/controllers/TransactionController.php (128)
+in /vagrant/server/fundy/index.php (13)
+2013/12/02 11:39:30 [error] [php] copy(/vagrant/server/fundy/assets/62276dc4/pager.css): failed to open stream: Permission denied (/vagrant/server/fundy/framework/web/CAssetManager.php:232)
+Stack trace:
+#0 /vagrant/server/fundy/framework/web/widgets/pagers/CLinkPager.php(226): asset()
+#1 /vagrant/server/fundy/framework/web/widgets/pagers/CLinkPager.php(216): registerCssFile()
+#2 /vagrant/server/fundy/framework/web/widgets/pagers/CLinkPager.php(131): CLinkPager->registerClientScript()
+#3 /vagrant/server/fundy/framework/web/CBaseController.php(173): CLinkPager->run()
+#4 /vagrant/server/fundy/framework/zii/widgets/CBaseListView.php(275): CListView->widget()
+#5 /vagrant/server/fundy/framework/zii/widgets/CBaseListView.php(167): CListView->renderPager()
+#6 unknown(0): CListView->renderSection()
+#7 /vagrant/server/fundy/framework/zii/widgets/CBaseListView.php(150): preg_replace_callback()
+#8 /vagrant/server/fundy/framework/zii/widgets/CBaseListView.php(135): CListView->renderContent()
+#9 /vagrant/server/fundy/framework/web/CBaseController.php(173): CListView->run()
+#10 /vagrant/server/fundy/protected/views/transaction/index.php(20): TransactionController->widget()
+#11 /vagrant/server/fundy/framework/web/CBaseController.php(126): require()
+#12 /vagrant/server/fundy/framework/web/CBaseController.php(95): TransactionController->renderInternal()
+#13 /vagrant/server/fundy/framework/web/CController.php(869): TransactionController->renderFile()
+#14 /vagrant/server/fundy/framework/web/CController.php(782): TransactionController->renderPartial()
+#15 /vagrant/server/fundy/protected/controllers/TransactionController.php(128): TransactionController->render()
+#16 /vagrant/server/fundy/framework/web/actions/CInlineAction.php(49): TransactionController->actionIndex()
+#17 /vagrant/server/fundy/framework/web/CController.php(308): CInlineAction->runWithParams()
+#18 /vagrant/server/fundy/framework/web/filters/CFilterChain.php(133): TransactionController->runAction()
+#19 /vagrant/server/fundy/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#20 /vagrant/server/fundy/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#21 /vagrant/server/fundy/framework/web/filters/CInlineFilter.php(58): TransactionController->filterAccessControl()
+#22 /vagrant/server/fundy/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#23 /vagrant/server/fundy/framework/web/CController.php(291): CFilterChain->run()
+#24 /vagrant/server/fundy/framework/web/CController.php(265): TransactionController->runActionWithFilters()
+#25 /vagrant/server/fundy/framework/web/CWebApplication.php(282): TransactionController->run()
+#26 /vagrant/server/fundy/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#27 /vagrant/server/fundy/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#28 /vagrant/server/fundy/index.php(13): CWebApplication->run()
+REQUEST_URI=/fundy/index.php/transaction/index
+in /vagrant/server/fundy/protected/views/transaction/index.php (20)
+in /vagrant/server/fundy/protected/controllers/TransactionController.php (128)
+in /vagrant/server/fundy/index.php (13)
+2013/12/02 11:39:37 [error] [php] copy(/vagrant/server/fundy/assets/62276dc4/pager.css): failed to open stream: Permission denied (/vagrant/server/fundy/framework/web/CAssetManager.php:232)
+Stack trace:
+#0 /vagrant/server/fundy/framework/web/widgets/pagers/CLinkPager.php(226): asset()
+#1 /vagrant/server/fundy/framework/web/widgets/pagers/CLinkPager.php(216): registerCssFile()
+#2 /vagrant/server/fundy/framework/web/widgets/pagers/CLinkPager.php(131): CLinkPager->registerClientScript()
+#3 /vagrant/server/fundy/framework/web/CBaseController.php(173): CLinkPager->run()
+#4 /vagrant/server/fundy/framework/zii/widgets/CBaseListView.php(275): CListView->widget()
+#5 /vagrant/server/fundy/framework/zii/widgets/CBaseListView.php(167): CListView->renderPager()
+#6 unknown(0): CListView->renderSection()
+#7 /vagrant/server/fundy/framework/zii/widgets/CBaseListView.php(150): preg_replace_callback()
+#8 /vagrant/server/fundy/framework/zii/widgets/CBaseListView.php(135): CListView->renderContent()
+#9 /vagrant/server/fundy/framework/web/CBaseController.php(173): CListView->run()
+#10 /vagrant/server/fundy/protected/views/transaction/index.php(20): TransactionController->widget()
+#11 /vagrant/server/fundy/framework/web/CBaseController.php(126): require()
+#12 /vagrant/server/fundy/framework/web/CBaseController.php(95): TransactionController->renderInternal()
+#13 /vagrant/server/fundy/framework/web/CController.php(869): TransactionController->renderFile()
+#14 /vagrant/server/fundy/framework/web/CController.php(782): TransactionController->renderPartial()
+#15 /vagrant/server/fundy/protected/controllers/TransactionController.php(128): TransactionController->render()
+#16 /vagrant/server/fundy/framework/web/actions/CInlineAction.php(49): TransactionController->actionIndex()
+#17 /vagrant/server/fundy/framework/web/CController.php(308): CInlineAction->runWithParams()
+#18 /vagrant/server/fundy/framework/web/filters/CFilterChain.php(133): TransactionController->runAction()
+#19 /vagrant/server/fundy/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#20 /vagrant/server/fundy/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#21 /vagrant/server/fundy/framework/web/filters/CInlineFilter.php(58): TransactionController->filterAccessControl()
+#22 /vagrant/server/fundy/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#23 /vagrant/server/fundy/framework/web/CController.php(291): CFilterChain->run()
+#24 /vagrant/server/fundy/framework/web/CController.php(265): TransactionController->runActionWithFilters()
+#25 /vagrant/server/fundy/framework/web/CWebApplication.php(282): TransactionController->run()
+#26 /vagrant/server/fundy/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#27 /vagrant/server/fundy/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#28 /vagrant/server/fundy/index.php(13): CWebApplication->run()
+REQUEST_URI=/fundy/index.php/transaction/index
+in /vagrant/server/fundy/protected/views/transaction/index.php (20)
+in /vagrant/server/fundy/protected/controllers/TransactionController.php (128)
+in /vagrant/server/fundy/index.php (13)
+2013/12/02 11:40:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "moneybox/index".' in /vagrant/server/fundy/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/server/fundy/framework/web/CWebApplication.php(141): CWebApplication->runController('moneybox/index')
+#1 /vagrant/server/fundy/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /vagrant/server/fundy/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/fundy/index.php/moneybox/index
+---
+2013/12/02 11:42:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "moneyBox/index".' in /vagrant/server/fundy/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/server/fundy/framework/web/CWebApplication.php(141): CWebApplication->runController('moneyBox/index')
+#1 /vagrant/server/fundy/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /vagrant/server/fundy/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/fundy/index.php/moneyBox/index
+---
+2013/12/02 13:45:57 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser._id" is not defined.' in /vagrant/server/fundy/framework/base/CComponent.php:130
+Stack trace:
+#0 /vagrant/server/fundy/framework/web/auth/CWebUser.php(146): CComponent->__get('_id')
+#1 /vagrant/server/fundy/protected/controllers/BoxController.php(73): CWebUser->__get('_id')
+#2 /vagrant/server/fundy/framework/web/actions/CInlineAction.php(49): BoxController->actionCreate()
+#3 /vagrant/server/fundy/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /vagrant/server/fundy/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /vagrant/server/fundy/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /vagrant/server/fundy/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /vagrant/server/fundy/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /vagrant/server/fundy/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /vagrant/server/fundy/framework/web/CController.php(291): CFilterChain->run()
+#10 /vagrant/server/fundy/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /vagrant/server/fundy/framework/web/CWebApplication.php(282): CController->run('create')
+#12 /vagrant/server/fundy/framework/web/CWebApplication.php(141): CWebApplication->runController('box/create')
+#13 /vagrant/server/fundy/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /vagrant/server/fundy/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/fundy/index.php/box/create
+HTTP_REFERER=http://localhost:9090/fundy/index.php/box/create
+---
+2013/12/02 13:48:50 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser._id" is not defined.' in /vagrant/server/fundy/framework/base/CComponent.php:130
+Stack trace:
+#0 /vagrant/server/fundy/framework/web/auth/CWebUser.php(146): CComponent->__get('_id')
+#1 /vagrant/server/fundy/protected/controllers/BoxController.php(73): CWebUser->__get('_id')
+#2 /vagrant/server/fundy/framework/web/actions/CInlineAction.php(49): BoxController->actionCreate()
+#3 /vagrant/server/fundy/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /vagrant/server/fundy/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /vagrant/server/fundy/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /vagrant/server/fundy/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /vagrant/server/fundy/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /vagrant/server/fundy/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /vagrant/server/fundy/framework/web/CController.php(291): CFilterChain->run()
+#10 /vagrant/server/fundy/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /vagrant/server/fundy/framework/web/CWebApplication.php(282): CController->run('create')
+#12 /vagrant/server/fundy/framework/web/CWebApplication.php(141): CWebApplication->runController('box/create')
+#13 /vagrant/server/fundy/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /vagrant/server/fundy/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/fundy/index.php/box/create
+HTTP_REFERER=http://localhost:9090/fundy/index.php/box/create
+---
+2013/12/02 13:55:05 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser._id" is not defined.' in /vagrant/server/fundy/framework/base/CComponent.php:130
+Stack trace:
+#0 /vagrant/server/fundy/framework/web/auth/CWebUser.php(146): CComponent->__get('_id')
+#1 /vagrant/server/fundy/protected/controllers/BoxController.php(73): CWebUser->__get('_id')
+#2 /vagrant/server/fundy/framework/web/actions/CInlineAction.php(49): BoxController->actionCreate()
+#3 /vagrant/server/fundy/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /vagrant/server/fundy/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /vagrant/server/fundy/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /vagrant/server/fundy/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /vagrant/server/fundy/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /vagrant/server/fundy/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /vagrant/server/fundy/framework/web/CController.php(291): CFilterChain->run()
+#10 /vagrant/server/fundy/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /vagrant/server/fundy/framework/web/CWebApplication.php(282): CController->run('create')
+#12 /vagrant/server/fundy/framework/web/CWebApplication.php(141): CWebApplication->runController('box/create')
+#13 /vagrant/server/fundy/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /vagrant/server/fundy/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/fundy/index.php/box/create
+HTTP_REFERER=http://localhost:9090/fundy/index.php/box/create
+---
+2013/12/02 14:15:45 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser._id" is not defined.' in /vagrant/server/fundy/framework/base/CComponent.php:130
+Stack trace:
+#0 /vagrant/server/fundy/framework/web/auth/CWebUser.php(146): CComponent->__get('_id')
+#1 /vagrant/server/fundy/protected/controllers/BoxController.php(73): CWebUser->__get('_id')
+#2 /vagrant/server/fundy/framework/web/actions/CInlineAction.php(49): BoxController->actionCreate()
+#3 /vagrant/server/fundy/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /vagrant/server/fundy/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /vagrant/server/fundy/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /vagrant/server/fundy/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /vagrant/server/fundy/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /vagrant/server/fundy/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /vagrant/server/fundy/framework/web/CController.php(291): CFilterChain->run()
+#10 /vagrant/server/fundy/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /vagrant/server/fundy/framework/web/CWebApplication.php(282): CController->run('create')
+#12 /vagrant/server/fundy/framework/web/CWebApplication.php(141): CWebApplication->runController('box/create')
+#13 /vagrant/server/fundy/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /vagrant/server/fundy/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/fundy/index.php/box/create
+HTTP_REFERER=http://localhost:9090/fundy/index.php/box/create
+---
+2013/12/02 14:17:22 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser._id" is not defined.' in /vagrant/server/fundy/framework/base/CComponent.php:130
+Stack trace:
+#0 /vagrant/server/fundy/framework/web/auth/CWebUser.php(146): CComponent->__get('_id')
+#1 /vagrant/server/fundy/protected/controllers/BoxController.php(73): CWebUser->__get('_id')
+#2 /vagrant/server/fundy/framework/web/actions/CInlineAction.php(49): BoxController->actionCreate()
+#3 /vagrant/server/fundy/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /vagrant/server/fundy/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /vagrant/server/fundy/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /vagrant/server/fundy/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /vagrant/server/fundy/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /vagrant/server/fundy/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /vagrant/server/fundy/framework/web/CController.php(291): CFilterChain->run()
+#10 /vagrant/server/fundy/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /vagrant/server/fundy/framework/web/CWebApplication.php(282): CController->run('create')
+#12 /vagrant/server/fundy/framework/web/CWebApplication.php(141): CWebApplication->runController('box/create')
+#13 /vagrant/server/fundy/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /vagrant/server/fundy/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/fundy/index.php/box/create
+HTTP_REFERER=http://localhost:9090/fundy/index.php/box/create
+---
+2013/12/02 14:22:43 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser._id" is not defined.' in /vagrant/server/fundy/framework/base/CComponent.php:130
+Stack trace:
+#0 /vagrant/server/fundy/framework/web/auth/CWebUser.php(146): CComponent->__get('_id')
+#1 /vagrant/server/fundy/protected/controllers/BoxController.php(73): CWebUser->__get('_id')
+#2 /vagrant/server/fundy/framework/web/actions/CInlineAction.php(49): BoxController->actionCreate()
+#3 /vagrant/server/fundy/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /vagrant/server/fundy/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /vagrant/server/fundy/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /vagrant/server/fundy/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /vagrant/server/fundy/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /vagrant/server/fundy/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /vagrant/server/fundy/framework/web/CController.php(291): CFilterChain->run()
+#10 /vagrant/server/fundy/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /vagrant/server/fundy/framework/web/CWebApplication.php(282): CController->run('create')
+#12 /vagrant/server/fundy/framework/web/CWebApplication.php(141): CWebApplication->runController('box/create')
+#13 /vagrant/server/fundy/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /vagrant/server/fundy/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/fundy/index.php/box/create
+HTTP_REFERER=http://localhost:9090/fundy/index.php/box/create
+---
+2013/12/02 14:37:07 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'owner_id'. The SQL statement executed was: INSERT INTO `money_box` (`balance`, `capacity`, `currency`, `owner_id`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in /vagrant/server/fundy/protected/controllers/BoxController.php (74)
+in /vagrant/server/fundy/index.php (13)
+2013/12/02 14:37:07 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'owner_id'. The SQL statement executed was: INSERT INTO `money_box` (`balance`, `capacity`, `currency`, `owner_id`) VALUES (:yp0, :yp1, :yp2, :yp3)' in /vagrant/server/fundy/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /vagrant/server/fundy/framework/db/ar/CActiveRecord.php(1077): CDbCommand->execute()
+#1 /vagrant/server/fundy/framework/db/ar/CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 /vagrant/server/fundy/protected/controllers/BoxController.php(74): CActiveRecord->save()
+#3 /vagrant/server/fundy/framework/web/actions/CInlineAction.php(49): BoxController->actionCreate()
+#4 /vagrant/server/fundy/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /vagrant/server/fundy/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /vagrant/server/fundy/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /vagrant/server/fundy/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /vagrant/server/fundy/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /vagrant/server/fundy/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /vagrant/server/fundy/framework/web/CController.php(291): CFilterChain->run()
+#11 /vagrant/server/fundy/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /vagrant/server/fundy/framework/web/CWebApplication.php(282): CController->run('create')
+#13 /vagrant/server/fundy/framework/web/CWebApplication.php(141): CWebApplication->runController('box/create')
+#14 /vagrant/server/fundy/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /vagrant/server/fundy/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/fundy/index.php/box/create
+HTTP_REFERER=http://localhost:9090/fundy/index.php/box/create
+---
+2013/12/02 16:10:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "moneybox".' in /vagrant/server/fundy/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /vagrant/server/fundy/framework/web/CWebApplication.php(141): CWebApplication->runController('moneybox')
+#1 /vagrant/server/fundy/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /vagrant/server/fundy/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/fundy/index.php/moneybox/
+---

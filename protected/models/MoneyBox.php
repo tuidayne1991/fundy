@@ -34,6 +34,7 @@ class MoneyBox extends CActiveRecord
 			array('owner_id, balance, capacity, currency', 'required'),
 			array('owner_id', 'numerical', 'integerOnly'=>true),
 			array('balance, capacity', 'numerical'),
+			array('balance, capacity', 'numerical','min' => 0),
 			array('currency', 'length', 'max'=>100),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
